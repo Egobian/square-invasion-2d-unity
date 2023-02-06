@@ -61,3 +61,4 @@ crashlytics-build.properties
 # Others
 .vsconfig
 UserSettings/Layouts/default-2021.dwlt
+*.dwlt
