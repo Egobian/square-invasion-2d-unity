@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class ControladorJugador : MonoBehaviour
 {
     private Rigidbody2D rb;
+    private Transform arma;
     private float ejeVertical;
     private float ejeHorizontal;
 
@@ -14,14 +15,16 @@ public class ControladorJugador : MonoBehaviour
     [SerializeField]
     private float fuerza = 10f;
     [SerializeField]
-    private float velocidadMaxima = 30f;
+    private float velocidadMaxima = 40f;
     [SerializeField]
     private float velocidadDeGiro = 6.5f;
-
+    [SerializeField]
+    private GameObject balaPref;
 
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+        arma = transform.Find("Arma");
     }
 
     private void Update()
@@ -36,6 +39,12 @@ public class ControladorJugador : MonoBehaviour
         else
         {
             estaAcelerando = false;
+        }
+
+        if (Input.GetKeyDown("space"))
+        {
+            GameObject bala = Instantiate(balaPref, arma.position, arma.rotation);
+            
         }
     }
 
