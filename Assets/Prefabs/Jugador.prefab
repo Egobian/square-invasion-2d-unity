@@ -216,4 +216,3 @@ MonoBehaviour:
   velocidadMaxima: 40
   velocidadDeGiro: 6.5
   balaPref: {fileID: 3337001919830782959, guid: 89c8121fdaf1f45d5b8f768e9e20aa9a, type: 3}
-  arma: {fileID: 0}
