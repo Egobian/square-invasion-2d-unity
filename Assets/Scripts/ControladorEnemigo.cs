@@ -1,12 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Security.Cryptography;
 using Unity.Burst.Intrinsics;
 using UnityEngine;
 using UnityEngine.Windows;
 
 public class ControladorEnemigo : MonoBehaviour
 {
-    public Transform objetivo;
+    private Transform objetivo;
 
     private float velocidad;
     private Vector3 direccion;
@@ -19,6 +20,7 @@ public class ControladorEnemigo : MonoBehaviour
 
     private void Start()
     {
+        objetivo = GameObject.FindGameObjectsWithTag("Jugador")[0].transform;
         velocidad = Random.Range(2f, 5f);
     }
 
@@ -39,5 +41,7 @@ public class ControladorEnemigo : MonoBehaviour
         {
             Destroy(this.gameObject);
         }
+
+
     }
 }

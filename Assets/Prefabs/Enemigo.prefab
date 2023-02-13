@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 962746976325721729}
   - component: {fileID: 962746976325721728}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -96,7 +96,7 @@ GameObject:
   - component: {fileID: 962746976671279315}
   - component: {fileID: 2743968336879461306}
   - component: {fileID: 2083697286}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Enemigo
   m_TagString: Enemigo
   m_Icon: {fileID: 0}
@@ -147,7 +147,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 881e4f26d23f947bf85ff955d847af5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objetivo: {fileID: 0}
 --- !u!50 &2083697286
 Rigidbody2D:
   serializedVersion: 4

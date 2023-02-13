@@ -11,7 +11,6 @@ public class Bala : MonoBehaviour
         velocidad = 12f;
     }
 
-    // Update is called once per frame
     void Update()
     {
         transform.Translate(Vector2.up * velocidad * Time.deltaTime, Space.Self);   
@@ -24,4 +23,5 @@ public class Bala : MonoBehaviour
             Destroy(this.gameObject);
         }
     }
+
 }
