@@ -27,7 +27,7 @@ public class EnemySpawner : MonoBehaviour
 
     private IEnumerator SpawnearEnemigo(GameObject enemigo)
     {
-        yield return new WaitForSeconds(Random.Range(1f, 6f));
+        yield return new WaitForSeconds(Random.Range(1f, 3.5f));
         Instantiate(enemigoPref, spawners[Random.Range(0, spawners.Length)].transform.position, Quaternion.identity);
         StartCoroutine(SpawnearEnemigo(enemigo));
     }
