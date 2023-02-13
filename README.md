@@ -18,7 +18,7 @@
 
 ## Sobre el juego
 
-Es un juego tipo "mata-marcianos" con vista desde arriba en 2D. Sobrevie al ataque de los cuadrados que no dejarán de aparecer  hasta que te maten o te choques contra los bordes del mapa.
+Es un juego tipo "mata-marcianos" con vista desde arriba en 2D. Sobrevive al ataque de los cuadrados que no dejarán de aparecer  hasta que te maten o te choques contra los bordes del mapa.
 
 Sistema de movimiento basado físicas 2D.
 
